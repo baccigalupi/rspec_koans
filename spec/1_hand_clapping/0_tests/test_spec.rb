@@ -1,11 +1,11 @@
-require File.dirname(__FILE__) + '/../spec_helper'
+require File.dirname(__FILE__) + '/../../spec_helper'
 
 # No code writing is required. This is a suite whose purpose is to document rspec testing.
 # Fill in the __ to make the tests pass
 # More information on Rsper is available at http://rspec.info/
 
 # This suite was taken from http://github.com/edgecase/ruby_koans
-# and converted to use with Rspec (version 2)
+# and converted to use with Rspec 
 
 describe 'Testing with Rspec' do
   describe 'the nature of truth' do

@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../spec_helper'
+require File.dirname(__FILE__) + '/../../spec_helper'
 
 # No code writing is required for this test suite, just fill in the __ to make them all pass
 # This suite was inspired by ruby koans: https://github.com/edgecase/ruby_koans

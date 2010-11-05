@@ -1,9 +1,9 @@
-require File.dirname(__FILE__) + '/../spec_helper'
+require File.dirname(__FILE__) + '/../../spec_helper'
 
 # No code writing is required for this test suite, just fill in the __ to make them all pass
 
 # This suite was taken directly from https://github.com/edgecase/ruby_koans
-# and converted to use with Rspec (version 2)
+# and converted to use with Rspec 
 
 describe Symbol do
   it 'symbols are symbols' do
@@ -16,7 +16,7 @@ describe Symbol do
     symbol_3 = :something_else
 
     symbol_1.should == __
-    symbol1.should_not == __
+    symbol_1.should_not == __
   end
 
   it 'should be the same object when given the same text' do

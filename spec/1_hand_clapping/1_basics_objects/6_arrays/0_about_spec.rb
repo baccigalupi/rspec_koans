@@ -1,10 +1,10 @@
-require File.dirname(__FILE__) + '/../spec_helper'
+require File.dirname(__FILE__) + '/../../../spec_helper'
 
 # No code writing is required for this test suite, just fill in the __ to make them all pass
 # Information on Ruby Array api is available at http://ruby-doc.org/core/classes/Array.html
 
 # This suite was taken directly from https://github.com/edgecase/ruby_koans
-# and converted to use with Rspec (version 2)
+# and converted to use with Rspec 
 
 describe Array, 'basics' do
   describe 'empty' do

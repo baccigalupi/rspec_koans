@@ -1,9 +1,9 @@
-require File.dirname(__FILE__) + '/../spec_helper'
+require File.dirname(__FILE__) + '/../../spec_helper'
 
 # No code writing is required for this test suite, just fill in the __ to make them all pass
 
 # This suite was taken directly from https://github.com/edgecase/ruby_koans
-# and converted to use with Rspec (version 2)
+# and converted to use with Rspec 
 
 describe String do
   describe 'single vs. double quoting' do
@@ -195,18 +195,17 @@ describe String do
     end
   end
   
-    it 'joining on a character works' do
-      words = ["Now", "is", "the", "time"]
-      words.join(" ").should == __
-    end
+  it 'joining on a character works' do
+    words = ["Now", "is", "the", "time"]
+    words.join(" ").should == __
+  end
 
-    it "creates unique objects for each literal" do
-      a = "a string"
-      b = "a string"
-      
-      (a == b).should __ # be_true -or- be_false
-      (a === b).should __ # === is only true if they are the same object
-      (a.object_id == b.object_id).should __
-    end
+  it "creates unique objects for each literal" do
+    a = "a string"
+    b = "a string"
+    
+    (a == b).should __ # be_true -or- be_false
+    (a === b).should __ # === is only true if they are the same object
+    (a.object_id == b.object_id).should __
   end
 end

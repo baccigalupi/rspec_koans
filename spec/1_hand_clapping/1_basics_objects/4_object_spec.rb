@@ -1,9 +1,9 @@
-require File.dirname(__FILE__) + '/../spec_helper'
+require File.dirname(__FILE__) + '/../../spec_helper'
 
 # No code writing is required for this test suite, just fill in the __ to make them all pass
 
 # This suite was taken directly from https://github.com/edgecase/ruby_koans
-# and converted to use with Rspec (version 2)
+# and converted to use with Rspec 
 describe Object do
   it 'basic things are objects' do
     1.is_a?(Object).should    __ # be_true -or- be_false

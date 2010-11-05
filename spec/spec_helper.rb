@@ -1,13 +1,4 @@
-require 'rubygems'
-require 'rspec'
-
-$:.unshift File.expand_path(File.dirname(__FILE__)+"/../")
-
-# Load all the files in the lib
-dir = '/lib'
-Dir["#{dir}/**/*.rb"].sort.each do |file|
-  require file
-end
+require File.dirname(__FILE__) + '/../setup'
 
 module GeneralHelpers
   def __
@@ -15,6 +6,14 @@ module GeneralHelpers
   end
 end
 
-RSpec.configure do |c|
-  include GeneralHelpers
-end 
+if RSPEC_VERSION == 2
+  RSpec.configure do |c|
+    include GeneralHelpers
+  end
+else
+  Spec::Runner.configure do |c|
+    include GeneralHelpers
+  end
+end
+
+
