@@ -5,6 +5,14 @@ require File.dirname(__FILE__) + '/../../spec_helper'
 # This suite was taken directly from https://github.com/edgecase/ruby_koans
 # and converted to use with Rspec 
 
-describe "methods" do
-
+# NOTE: We saw some blocks in iterations, and loops. Here are more details
+describe "blocks" do
+  describe 'making' do
+  end
+  
+  describe 'calling' do
+  end
+  
+  describe 'variable scope' do
+  end
 end

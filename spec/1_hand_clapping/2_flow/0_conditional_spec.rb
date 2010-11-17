@@ -25,7 +25,7 @@ describe "if statements" do
     end
     
     it 'nil is also not true' do
-      is_true?(nil).should == __
+      is_true?(nil).should == false
     end
     
     it 'anything else is true' do

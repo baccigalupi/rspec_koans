@@ -77,13 +77,13 @@ describe String do
       string = <<-STRING 
         flexible quotes can handle both ' and " characters
       STRING
-      string.should == @string
+      string.should include @string # there are also space and new line characters
     end
     
     it 'handle multiple lines' do
       string = <<-OTHER_STING
-        It was the best of times,
-        It was the worst of times
+It was the best of times,
+It was the worst of times
       OTHER_STING
       
       string.size.should == __

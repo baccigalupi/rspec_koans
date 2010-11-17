@@ -29,6 +29,7 @@ describe 'Testing with Rspec' do
   
     it 'other things are truthy too' do
       1.should __
+      0.should __ 
     end
   
     # Nothing needed here, just observe!

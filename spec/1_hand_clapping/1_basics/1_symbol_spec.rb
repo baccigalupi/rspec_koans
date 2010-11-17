@@ -5,6 +5,9 @@ require File.dirname(__FILE__) + '/../../spec_helper'
 # This suite was taken directly from https://github.com/edgecase/ruby_koans
 # and converted to use with Rspec 
 
+# Symbols are like string, and this suite shows how they are different: They are immutable, and
+# only one copy of a symbol for a given string exists in the Ruby implementation. Think about it: 
+# How can this be useful especially for effeciency?
 describe Symbol do
   it 'symbols are symbols' do
     :ruby.class.should == __
@@ -67,6 +70,7 @@ describe Symbol do
   
   it 'should not concatenate' do
     # to catch an exception, we create a closure/lambda, and assert that exceptions are raised
+    # Exceptions are covered in the flow section.
     lambda{
       :cats + :dogs
     }.should raise_error(__) # Fill in the exception class that will be raised
