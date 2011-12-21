@@ -5,6 +5,5 @@ require File.dirname(__FILE__) + '/../../spec_helper'
 # This suite was inspired by Ruby Koans: https://github.com/edgecase/ruby_koans
 
 # NOTE: A method without a class is like a fish without a bicycle, but sometimes fishing is odd
-describe "variables
-" do
+describe "variables" do
 end
