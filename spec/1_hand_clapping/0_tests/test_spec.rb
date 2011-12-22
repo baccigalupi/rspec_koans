@@ -5,7 +5,7 @@ require File.dirname(__FILE__) + '/../../spec_helper'
 # More information on Rsper is available at http://rspec.info/
 
 # This suite was taken from http://github.com/edgecase/ruby_koans
-# and converted to use with Rspec
+# and converted to use with Rspec. Rspec specific tests have also been added!
 
 describe 'Testing with Rspec' do
   describe 'the nature of truth' do
